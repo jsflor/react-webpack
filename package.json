@@ -1,0 +1,40 @@
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "description": "React app architecture with webpack",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server",
+    "start": "npm run webpack-dev-server -- --env.mode development --open",
+    "build": "npm run webpack -- --env.mode production",
+    "build:analyze": "npm run build -- --env.presets analyze",
+    "build:compress": "npm run build -- --env.presets compress"
+  },
+  "keywords": [],
+  "author": "Juan Sebastian Flor Usma <sebastian-flor@hotmail.com> (https://github.com/sebastianflor)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "compression-webpack-plugin": "^6.0.2",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^3.9.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
