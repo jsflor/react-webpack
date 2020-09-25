@@ -10,7 +10,7 @@ module.exports = (mode) => ({
         publicPath: "/"
     },
     resolve: {
-        extensions: [".js", ".jsx"],
+        extensions: [ '.tsx', '.ts', '.js' ],
     },
     module: {
         rules: [
