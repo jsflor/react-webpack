@@ -3,8 +3,15 @@ import {render} from "react-dom";
 import { Router } from "@reach/router";
 
 import Main from "./components/main";
-const Home = lazy(() => import(/* webpackChunkName: "Home" */"./components/home"));
-const About = lazy(() => import(/* webpackChunkName: "About" */"./components/about"));
+const Home = lazy(() => import(
+    /* webpackChunkName: "Home" */
+    /* webpackPrefetch: true */
+    "./components/home"
+    ));
+const About = lazy(() => import(
+    /* webpackChunkName: "About" */
+    /* webpackPrefetch: true */
+    "./components/about"));
 import Navigation from "./components/navigation";
 
 const App = () => (
