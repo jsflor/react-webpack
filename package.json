@@ -9,7 +9,9 @@
     "start": "npm run webpack-dev-server -- --env.mode development --open",
     "build": "npm run webpack -- --env.mode production",
     "build:analyze": "npm run build -- --env.presets analyze",
-    "build:compress": "npm run build -- --env.presets compress"
+    "build:compress": "npm run build -- --env.presets compress",
+    "start:ts": "npm run start -- --env.presets typescript",
+    "build:ts": "npm run build -- --env.presets typescript"
   },
   "keywords": [],
   "author": "Juan Sebastian Flor Usma <sebastian-flor@hotmail.com> (https://github.com/sebastianflor)",
@@ -18,6 +20,9 @@
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "@types/reach__router": "^1.3.5",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
     "compression-webpack-plugin": "^6.0.2",
     "css-loader": "^4.3.0",
@@ -26,6 +31,8 @@
     "mini-css-extract-plugin": "^0.11.2",
     "react-hot-loader": "^4.13.0",
     "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
     "url-loader": "^4.1.0",
     "webpack": "^4.44.1",
     "webpack-bundle-analyzer": "^3.9.0",
@@ -34,6 +41,7 @@
     "webpack-merge": "^5.1.4"
   },
   "dependencies": {
+    "@reach/router": "^1.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
