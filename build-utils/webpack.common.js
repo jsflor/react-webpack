@@ -7,10 +7,11 @@ module.exports = (mode) => ({
     output: {
         path: path.resolve(__dirname, "../dist"),
         filename: "bundle.js",
+        chunkFilename: "[name].lazy-chunk.js",
         publicPath: "/"
     },
     resolve: {
-        extensions: [".js", ".jsx"],
+        extensions: [ '.tsx', '.ts', '.js' ],
     },
     module: {
         rules: [
