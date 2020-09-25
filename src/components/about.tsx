@@ -3,10 +3,10 @@ import {RouteComponentProps} from "@reach/router";
 
 import './styles.css';
 
-const Aboutus: FunctionComponent<RouteComponentProps> = () => (
+const About: FunctionComponent<RouteComponentProps> = () => (
     <div>
         <h1>About us</h1>
     </div>
 );
 
-export default  Aboutus;
+export default  About;
